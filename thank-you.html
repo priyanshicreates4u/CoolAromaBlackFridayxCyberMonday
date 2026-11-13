@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You | Cool Aroma Black Friday (Mockup)</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#4c3467; --purple-d:#3b2554; --purple-t:#f5f0fa; --purple-l:#e6dcf0;
+  --gold:#bd8e26; --gold-d:#b58317; --gold-t:#fbf6ea; --gold-l:#d0b069;
+  --text:#2b2233; --body:#666; --line:#ececec; --off:#fafafa;
+  --wa:#25d366; --wa-d:#1da851;
+  --head:'Raleway',system-ui,sans-serif; --sans:'Nunito','Raleway',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--body);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);color:var(--purple);line-height:1.12}
+.eyebrow{font-family:var(--head);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+
+.topbar{background:var(--purple);color:#fff;font-family:var(--head);font-weight:700;font-size:13px;letter-spacing:.04em;text-align:center;padding:9px 16px;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap}
+.cd{display:inline-flex;gap:5px;align-items:center}
+.cd span{background:var(--gold);color:#fff;font-variant-numeric:tabular-nums;font-weight:800;padding:3px 7px;border-radius:5px;min-width:30px;text-align:center;font-family:var(--head)}
+.cd i{font-style:normal;font-size:10px;opacity:.7;margin-left:-2px}
+
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;max-width:980px;margin:0 auto}
+.logo img{height:44px}
+.logo-txt{font-family:var(--head);color:var(--purple);font-weight:800;font-size:20px;letter-spacing:.04em;line-height:1.1}
+.logo-txt small{display:block;font-size:10px;letter-spacing:.3em;color:var(--gold);font-weight:700}
+.nav .permit{font-size:12px;color:#999}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;font-size:16px;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;transition:background .15s}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa:hover{background:var(--wa-d)}
+.btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:var(--gold-d)}
+.btn-line{background:#fff;color:var(--purple);border:2px solid var(--purple)}.btn-line:hover{background:var(--purple-t)}
+.ico{width:20px;height:20px;flex:none}
+
+/* hero */
+.hero{padding:56px 0 64px;text-align:center;background:radial-gradient(560px 320px at 10% 0%,var(--purple-t),transparent 70%),radial-gradient(480px 300px at 100% 100%,var(--gold-t),transparent 70%)}
+.check{width:96px;height:96px;border-radius:50%;background:var(--purple);margin:0 auto 22px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 12px var(--purple-t)}
+.check svg{width:46px;height:46px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--purple-l);color:var(--purple);font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.12em;padding:6px 14px 6px 6px;border-radius:999px;margin-bottom:16px}
+.tag b{background:var(--purple);color:#fff;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.hero h1{font-size:clamp(34px,5.2vw,52px);font-weight:900;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:18px;max-width:600px;margin:0 auto}
+.chosen{display:inline-block;margin-top:20px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:12px 18px;font-size:15px;color:var(--text);text-align:left}
+.chosen b{color:var(--purple)}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+
+/* steps */
+section{padding:60px 0}
+.alt{background:var(--off)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.step .n{width:38px;height:38px;border-radius:50%;border:2px solid var(--gold);color:var(--purple);font-family:var(--head);font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.step h3{font-size:18px;font-weight:800}
+.step p{font-size:14px;margin-top:6px}
+
+/* cross-sell */
+.xs{border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:20px;padding:30px;display:grid;grid-template-columns:1.3fr .7fr;gap:20px;align-items:center;background:linear-gradient(135deg,#fff 60%,var(--gold-t))}
+.xs h2{font-size:28px;font-weight:800;margin:6px 0}
+.xs .r{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.xs .pr{font-family:var(--head);font-weight:900;font-size:36px;color:var(--purple);line-height:1}
+.xs .pr s{font-size:16px;color:#999;font-weight:600;margin-left:6px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;margin-top:22px;align-items:stretch}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:280px;background:var(--purple-t)}
+.map iframe{width:100%;height:100%;min-height:280px;border:0}
+.info{display:grid;gap:12px;align-content:start}
+.row{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;color:var(--text)}
+.row b{display:block;font-family:var(--head);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.row a{color:var(--purple);font-weight:700}
+
+footer{background:var(--purple-d);color:#bfb3cc;padding:24px 0;font-size:12px;text-align:center}
+footer a{color:var(--gold-l)}
+
+@media (max-width:760px){
+  .steps,.contact,.xs{grid-template-columns:1fr}
+  .xs .r{align-items:flex-start}
+  section{padding:48px 0}
+  .hero{padding:40px 0 50px}
+  .tag{font-size:10px;letter-spacing:.08em}
+  .nav .permit{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><span id="tbText">🖤 Black Friday sale starts in</span><span class="cd" data-cd></span></div>
+
+<header class="nav">
+  <a class="logo" href="/waitlist">
+    <img src="https://www.coolaromaspa.com/wp-content/themes/coolaroma/images/2021/logonew.png" alt="Cool Aroma Gentlemen's Spa"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="logo-txt" style="display:none">COOL AROMA<small>GENTLEMEN'S SPA</small></span>
+  </a>
+  <span class="permit">Permit No. 1046170</span>
+</header>
+
+<!-- ============ CONFIRMATION ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <span class="tag"><b>27–30 NOV</b> BLACK FRIDAY × CYBER MONDAY</span>
+    <h1 id="tTitle">You're on the list!</h1>
+    <p class="lead" id="tLead">Thank you for joining the Black Friday waitlist. You'll get <b style="color:var(--purple)">first pick of slots</b>, and we'll WhatsApp you the moment the sale opens on 27 Nov.</p>
+    <div class="chosen" id="chosen">You signed up for: <b id="chosenTxt">Black Friday waitlist · 14 hours for AED 2,400</b></div>
+    <div class="cta">
+      <a class="btn btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2C6.6 2.2 2.2 6.6 2.2 12c0 1.8.5 3.6 1.5 5.2l-1 3.6 3.7-1c1.5.9 3.2 1.4 5 1.4 5.4 0 9.8-4.4 9.8-9.8S17.4 2.2 12 2.2z"/></svg>
+        WhatsApp us
+      </a>
+      <a class="btn btn-line" id="calBtn" download="cool-aroma-black-friday.ics" href="#">📅 Add 27 Nov to calendar</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT HAPPENS NEXT ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">What happens next</div>
+    <h2 style="font-size:32px;font-weight:800;margin-top:6px">Here's what to expect</h2>
+    <div class="steps" id="steps"></div>
+  </div>
+</section>
+
+<!-- ============ CROSS-SELL ============ -->
+<section id="xsWrap">
+  <div class="wrap">
+    <div class="xs" id="xs"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Visit us</div>
+    <h2 style="font-size:32px;font-weight:800;margin-top:6px">Easy to reach in Oud Metha</h2>
+    <div class="contact">
+      <div class="map">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Cool Aroma"
+          src="https://www.google.com/maps?q=Cool+Aroma+Gentlemen+Spa+Al+Nasr+Plaza+Oud+Metha+Dubai&output=embed"></iframe>
+      </div>
+      <div class="info">
+        <div class="row"><b>Address</b>Shop 14, Al Nasr Plaza, Oud Metha, Dubai</div>
+        <div class="row"><b>Opening hours</b>Open daily · 10:00 AM – 12:00 midnight</div>
+        <div class="row"><b>Phone</b><a href="tel:+97143709706">04 370 9706</a> · Mobile <a href="tel:+971561162545">056 116 2545</a></div>
+        <a class="btn btn-gold" href="https://maps.google.com/?q=Al+Nasr+Plaza+Oud+Metha+Dubai" target="_blank" rel="noopener">Get directions →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Cool Aroma Gentlemen's Spa · Trade License No. 690390 · <a href="#">Refund &amp; Cancellation Policy</a>
+</footer>
+
+<script>
+/* The form page sends ?for=<option value> (no personal data in the URL). */
+const params = new URLSearchParams(location.search);
+const pick = params.get('for') || 'waitlist';
+const START = new Date('2026-11-27T00:00:00+04:00').getTime();
+const END   = new Date('2026-11-30T23:59:59+04:00').getTime();
+const live = params.get('live') === '1' || (Date.now() >= START && Date.now() <= END);
+
+const PRICES = {
+  'Body Scrub + Massage + Facial':'AED 650','Four Hands Tender Touch':'AED 610',
+  'Foot Wellness Care':'AED 439','Tip to Toe Care':'AED 1,215',
+  'Balinese Massage':'AED 240','Aromatherapy Massage':'AED 240','Lomi Lomi Massage':'AED 240'
+};
+const WA = '971561162545';
+const wa = msg => `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+const $ = id => document.getElementById(id);
+
+let title, lead, chosen, waMsg, steps, xs;
+if (pick === 'waitlist') {
+  title = live ? 'Your Black Friday offer is reserved!' : "You're on the list!";
+  lead = live
+    ? 'Thank you! Our team will WhatsApp you shortly to lock in your 14 hours for AED 2,400 before the sale ends on 30 Nov.'
+    : 'Thank you for joining the Black Friday waitlist. You\'ll get <b style="color:var(--purple)">first pick of slots</b>, and we\'ll WhatsApp you the moment the sale opens on 27 Nov.';
+  chosen = 'Black Friday × Cyber Monday · 14 hours for AED 2,400';
+  waMsg = 'Hi Cool Aroma, I have a question about the Black Friday offer.';
+  steps = live
+    ? [['We WhatsApp you','Our team will reach out shortly to confirm your package.'],['Lock in your 14 hours','Pay AED 2,400 for 10 hours and get the next 4 free.'],['Book your sessions','Redeem your hours however you like, minimum 60 min per session.']]
+    : [['Watch your WhatsApp','We\'ll message you the moment the sale opens on 27 Nov.'],['Claim first','Waitlist members get first pick of slots before the rush.'],['Relax for 14 hours','Pay for 10 hours, and the next 4 are absolutely free.']];
+  xs = 'intro';
+} else if (pick === 'intro') {
+  title = 'Your intro offer is reserved!';
+  lead = 'Thank you! Our team will be in touch soon to confirm your first 60-minute massage at Cool Aroma Gentlemen\'s Spa.';
+  chosen = 'Intro offer · first 60-min massage · AED 160';
+  waMsg = 'Hi Cool Aroma, I have a question regarding the Introductory Offer.';
+  steps = [['We WhatsApp you','Our team will confirm your date, time and therapist.'],['Arrive & relax','A short consultation, then 60 minutes in a private room.'],['Come back for more','Don\'t miss our Black Friday offer: 14 hours for the price of 10.']];
+  xs = 'bf';
+} else {
+  const label = pick === 'other' ? 'Help choosing a spa package' : `${pick}${PRICES[pick] ? ' · ' + PRICES[pick] : ''}`;
+  title = 'Thank you for your booking request!';
+  lead = 'Our team will be in touch soon to confirm your appointment at Cool Aroma Gentlemen\'s Spa.';
+  chosen = label;
+  waMsg = `Hi Cool Aroma, I have a question about my booking: ${pick === 'other' ? 'spa packages' : pick}.`;
+  steps = [['We WhatsApp you','Our team will confirm your date, time and therapist.'],['Arrive & relax','Enjoy your treatment in a calm, private space built for men.'],['Save on your next visit','Black Friday: 14 hours of massage for the price of 10.']];
+  xs = 'bf';
+}
+
+$('tTitle').textContent = title;
+$('tLead').innerHTML = lead;
+$('chosenTxt').textContent = chosen;
+$('waBtn').href = wa(waMsg);
+$('steps').innerHTML = steps.map((s,i) => `<div class="step"><div class="n">${i+1}</div><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('');
+
+/* calendar reminder only makes sense for the waitlist before the sale */
+if (pick === 'waitlist' && !live) {
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Cool Aroma//Black Friday//EN','BEGIN:VEVENT',
+    'UID:bf2026@coolaromaspa.com','DTSTAMP:20261113T000000Z','DTSTART:20261126T200000Z','DTEND:20261126T210000Z',
+    'SUMMARY:Cool Aroma Black Friday sale opens','DESCRIPTION:14 hours of massage for the price of 10 (AED 2\\,400). Sale runs 27–30 Nov.',
+    'LOCATION:Shop 14\\, Al Nasr Plaza\\, Oud Metha\\, Dubai','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  $('calBtn').href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
+} else { $('calBtn').remove(); }
+
+$('xs').innerHTML = xs === 'intro'
+  ? `<div><div class="eyebrow">New to Cool Aroma?</div><h2>Try your first massage today</h2><p>First-time guests get a 60-minute Balinese or Aromatherapy massage at our introductory price.</p></div>
+     <div class="r"><div class="pr">AED 160<s>AED 240</s></div><a class="btn btn-gold" href="/waitlist?book=intro#join">Claim my intro offer →</a></div>`
+  : `<div><div class="eyebrow">Black Friday × Cyber Monday · 27–30 Nov</div><h2>Save 28% on 14 hours of massage</h2><p>Pay for 10 hours and get the next 4 absolutely free. Once a year only.</p></div>
+     <div class="r"><div class="pr">AED 2,400</div><a class="btn btn-gold" href="/waitlist#join">${live ? 'Avail the offer →' : 'Join the waitlist →'}</a></div>`;
+
+/* countdown */
+const pad = n => String(n).padStart(2,'0');
+$('tbText').textContent = live ? '🔥 Black Friday sale ends in' : '🖤 Black Friday sale starts in';
+function tick(){
+  const d = Math.max(0, (live ? END : START) - Date.now()), dd = Math.floor(d/864e5), h = Math.floor(d%864e5/36e5),
+        m = Math.floor(d%36e5/6e4), s = Math.floor(d%6e4/1e3);
+  document.querySelectorAll('[data-cd]').forEach(el => el.innerHTML =
+    `<span>${dd}</span><i>d</i><span>${pad(h)}</span><i>h</i><span>${pad(m)}</span><i>m</i><span>${pad(s)}</span><i>s</i>`);
+}
+tick(); setInterval(tick, 1000);
+</script>
+</body>
+</html>

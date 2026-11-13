@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cool Aroma Black Friday Sale (Mockup)</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Brand palette from coolaromaspa.com: purple #4c3467, gold #bd8e26 on white */
+:root{
+  --purple:#4c3467; --purple-d:#3b2554; --purple-t:#f5f0fa; --purple-l:#e6dcf0;
+  --gold:#bd8e26; --gold-d:#b58317; --gold-t:#fbf6ea; --gold-l:#d0b069;
+  --text:#2b2233; --body:#666; --line:#ececec; --off:#fafafa;
+  --wa:#25d366; --wa-d:#1da851; --red:#d64535;
+  --head:'Raleway',system-ui,sans-serif; --sans:'Nunito','Raleway',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--body);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);color:var(--purple);line-height:1.1}
+h2{font-size:clamp(28px,4.4vw,40px);font-weight:800;margin:8px 0 10px}
+.eyebrow{font-family:var(--head);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+section{padding:72px 0}
+.sub{max-width:600px}
+.center{text-align:center}
+.center .sub{margin:0 auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;font-size:16px;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:0 8px 22px rgba(189,142,38,.28)}
+.btn-gold:hover{background:var(--gold-d)}
+.btn-purple{background:var(--purple);color:#fff}
+.btn-purple:hover{background:var(--purple-d)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-d)}
+
+/* top bar */
+.topbar{background:var(--purple);color:#fff;font-family:var(--head);font-weight:700;font-size:13px;letter-spacing:.04em;text-align:center;padding:9px 16px;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap}
+.cd{display:inline-flex;gap:5px;align-items:center}
+.cd span{background:var(--gold);color:#fff;font-variant-numeric:tabular-nums;font-weight:800;padding:3px 7px;border-radius:5px;min-width:30px;text-align:center;font-family:var(--head)}
+.cd i{font-style:normal;font-size:10px;opacity:.7;margin-left:-2px}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 20px}
+.logo img{height:44px}
+.logo-txt{font-family:var(--head);color:var(--purple);font-weight:800;font-size:20px;letter-spacing:.04em;line-height:1.1}
+.logo-txt small{display:block;font-size:10px;letter-spacing:.3em;color:var(--gold);font-weight:700}
+.nav a.call{font-size:14px;color:var(--purple);font-weight:700}
+
+/* hero */
+.hero{padding:30px 0 72px;background:radial-gradient(600px 360px at 8% 10%,var(--purple-t),transparent 70%),radial-gradient(520px 320px at 100% 90%,var(--gold-t),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--purple-l);color:var(--purple);font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.12em;padding:6px 14px 6px 6px;border-radius:999px}
+.tag b{background:var(--purple);color:#fff;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.hero h1{font-size:clamp(36px,5.4vw,56px);font-weight:900;margin:18px 0 14px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:18px;max-width:500px;color:#5b5363}
+.lead b{color:var(--purple)}
+.price{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:24px 0 0}
+.price .now{font-family:var(--head);font-size:50px;font-weight:900;color:var(--purple);line-height:1}
+.price .now span{font-size:20px;color:var(--gold);margin-right:4px}
+.save{background:var(--gold-t);color:var(--gold-d);border:1px solid var(--gold-l);font-family:var(--head);font-weight:800;font-size:13px;padding:6px 12px;border-radius:999px}
+
+/* form card */
+.fcard{background:#fff;border:2px solid var(--purple);border-radius:22px;padding:28px;box-shadow:0 24px 60px rgba(76,52,103,.14);position:relative}
+.fcard .ribbon{position:absolute;top:-14px;left:24px;background:var(--gold);color:#fff;font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:.06em;padding:5px 14px;border-radius:999px}
+.fcard h3{font-size:24px;font-weight:800;margin-bottom:4px}
+.fcard p.s{font-size:14px;margin-bottom:16px}
+.ctimer{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--purple-t);border-radius:12px;padding:10px 12px;margin-bottom:16px;font-size:13px;font-weight:700;color:var(--purple)}
+.ctimer span:first-child{white-space:nowrap}
+form{display:grid;gap:12px}
+label{font-size:12px;font-weight:700;color:#555;display:grid;gap:6px}
+input,select{width:100%;background:#fff;border:1px solid #ddd;color:var(--text);padding:13px 15px;border-radius:10px;font:inherit;font-size:15px}
+input:focus,select:focus{outline:2px solid var(--purple);border-color:transparent}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fine{font-size:12px;text-align:center;color:#999;margin-top:10px}
+.done{display:none;text-align:center;padding:20px 0}
+.done b{display:block;font-family:var(--head);font-size:22px;color:var(--purple);margin:8px 0 4px}
+
+/* hours visual */
+.hours{display:grid;grid-template-columns:repeat(14,1fr);gap:8px;margin:30px 0 16px}
+.hr{aspect-ratio:1/1.35;border-radius:10px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px;font-family:var(--head);font-weight:800;font-size:13px;position:relative}
+.hr.pay{background:var(--purple-t);color:var(--purple);border:1px solid var(--purple-l)}
+.hr.free{background:var(--gold);color:#fff}
+.hr.free::before{content:"FREE";position:absolute;top:8px;font-size:9px;letter-spacing:.1em}
+.legend{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;justify-content:center}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+.uses{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:30px 0 22px}
+.uses span{background:#fff;border:1px solid var(--purple-l);color:var(--purple);font-family:var(--head);font-weight:700;font-size:14px;padding:9px 18px;border-radius:999px}
+.textlink{font-family:var(--head);font-weight:800;color:var(--purple);border-bottom:2px solid var(--gold);padding-bottom:2px}
+
+/* perks + timeline */
+.alt{background:var(--off)}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.perk{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.perk .ic{width:46px;height:46px;border-radius:12px;background:var(--purple-t);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px}
+.perk:nth-child(2) .ic{background:var(--gold-t)}
+.perk h3{font-size:18px;font-weight:800}
+.perk p{font-size:14px;margin-top:6px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:34px}
+.step{padding-right:18px;position:relative}
+.step .dot{width:38px;height:38px;border-radius:50%;background:#fff;border:2px solid var(--gold);color:var(--purple);font-family:var(--head);font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:12px;position:relative;z-index:1}
+.step::after{content:"";position:absolute;top:19px;left:38px;right:0;height:2px;background:var(--purple-l)}
+.step:last-child::after{display:none}
+.step b{display:block;font-family:var(--head);color:var(--purple);font-size:16px}
+.step span{font-size:14px}
+
+/* photos */
+.intro-img{width:100%;height:100%;min-height:200px;object-fit:cover;object-position:30% 50%;border-radius:14px;display:block}
+.book-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.book-img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:62% 50%;border-radius:18px;display:block}
+/* book now packages */
+.pkgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
+.pkg{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column}
+.pkg:hover{border-color:var(--purple-l);box-shadow:0 12px 30px rgba(76,52,103,.08)}
+.pkg h3{font-size:18px;font-weight:800}
+.pkg ul{list-style:none;margin:10px 0 16px;display:grid;gap:4px;font-size:14px;flex:1;align-content:start}
+.pkg li::before{content:"• ";color:var(--gold);font-weight:800}
+.pkg .pp{font-family:var(--head);font-weight:900;font-size:24px;color:var(--purple);margin-bottom:12px}
+.pkg .pp span{font-size:13px;color:var(--gold);margin-right:3px}
+.pkg .dur{font-size:12px;color:#999;font-weight:700;margin-top:2px}
+.btn-sm{padding:10px 16px;font-size:14px}
+.btn-outline{background:#fff;color:var(--purple);border:2px solid var(--purple)}
+.btn-outline:hover{background:var(--purple-t)}
+/* intro offer */
+.intro-box{border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:20px;padding:34px;display:grid;grid-template-columns:.8fr 1.3fr .7fr;gap:24px;align-items:center;background:linear-gradient(135deg,#fff 60%,var(--gold-t))}
+.intro-box .ip{display:flex;align-items:baseline;gap:12px;justify-content:flex-end;flex-wrap:wrap}
+.intro-box .ip b{font-family:var(--head);font-size:44px;font-weight:900;color:var(--purple);line-height:1}
+.intro-box .ip s{font-size:18px;color:#999;text-decoration-color:var(--red)}
+.intro-cta{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+
+/* faq */
+.faq{max-width:780px;margin:22px auto 0;display:grid;gap:12px;text-align:left}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 20px}
+.faq details[open]{border-color:var(--purple)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 34px 18px 0;font-family:var(--head);font-weight:700;color:var(--purple);font-size:16px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--gold-t);color:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:900}
+.faq details[open] summary::after{content:"–";background:var(--purple);color:#fff}
+.faq details p{padding:0 0 18px;font-size:15px}
+.note{font-size:11px;color:#7a5a10;background:#fff7dd;border:1px dashed var(--gold);padding:2px 6px;border-radius:4px}
+
+/* final */
+.final{background:var(--purple);color:#e3d8ee}
+.final h2{color:#fff;font-size:clamp(30px,4.6vw,46px)}
+.final .eyebrow{color:var(--gold-l)}
+.final-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.final .fcard{border:0}
+
+footer{background:var(--purple-d);color:#bfb3cc;padding:24px 0;font-size:12px;text-align:center}
+footer a{color:var(--gold-l)}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08);padding:10px 16px;display:flex;align-items:center;gap:12px;z-index:40}
+.sticky .sp{flex:1;font-size:12px;line-height:1.3;color:#777}
+.sticky .sp b{display:block;color:var(--purple);font-family:var(--head);font-size:15px}
+.sticky .btn{padding:12px 18px;font-size:14px}
+
+/* live-state toggles */
+.live-only{display:none}
+body.live .pre-only{display:none}
+body.live .live-only{display:revert}
+body.live .btn.live-only{display:inline-flex}
+
+@media (max-width:860px){
+  .hero-grid,.final-grid,.intro-box,.book-head{grid-template-columns:1fr}
+  .perks{grid-template-columns:1fr}
+  .pkgs{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:20px}
+  .step::after{display:none}
+  .hours{grid-template-columns:repeat(7,1fr)}
+  section{padding:54px 0}
+  .hero h1{font-size:36px}
+  .row2{grid-template-columns:1fr}
+  .tag{font-size:10px;letter-spacing:.08em}
+  .intro-box{padding:26px}
+  .fcard{padding:22px 18px}
+  .ctimer{flex-wrap:wrap}
+  .ctimer .cd span{min-width:26px;padding:3px 5px}
+  .intro-box .ip{justify-content:flex-start}
+  .intro-cta{align-items:flex-start}
+}
+@media (min-width:861px){ .sticky{display:none} body{padding-bottom:0} }
+
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;text-align:left}
+.how .perk .n{width:38px;height:38px;border-radius:50%;border:2px solid var(--gold);color:var(--purple);font-family:var(--head);font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.wa-alt{display:block;text-align:center;margin-top:12px;font-size:14px;color:var(--purple);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.endnote{display:inline-block;margin-top:14px;background:#fdecea;color:#b33a2e;font-family:var(--head);font-weight:800;font-size:13px;padding:6px 14px;border-radius:999px}
+@media (max-width:860px){.how{grid-template-columns:1fr}}
+.was{font-family:var(--head);font-size:26px;font-weight:700;color:#999;text-decoration-color:var(--red);text-decoration-thickness:3px}
+.pnote{font-size:14px;margin-top:10px;color:#777}
+</style>
+</head>
+<body>
+
+<div class="topbar"><span id="tb">🔥 Black Friday sale ends in</span><span class="cd" data-cd></span></div>
+
+<header class="wrap nav">
+  <a class="logo" href="#">
+    <img src="https://www.coolaromaspa.com/wp-content/themes/coolaroma/images/2021/logonew.png" alt="Cool Aroma Gentlemen's Spa"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="logo-txt" style="display:none">COOL AROMA<small>GENTLEMEN'S SPA</small></span>
+  </a>
+  <a class="call" href="tel:+97143709706">📞 04 370 9706</a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag"><b>27–30 NOV</b> BLACK FRIDAY × CYBER MONDAY</span>
+      <h1><em>Save 28%</em> on 14 hours of deep relaxation massage.</h1>
+      <p class="lead">Our once-a-year mega offer is live: <b>pay for 10 hours</b> and the next 4 are absolutely free.</p>
+      <div class="price">
+        <s class="was">AED 3,360</s>
+        <div class="now"><span>AED</span>2,400</div>
+        <div class="save">14 HOURS · SAVE AED 960</div>
+      </div>
+      <p class="pnote">Regular price for 14 hours is AED 3,360. This Black Friday, pay just AED 2,400.</p>
+      <div class="endnote">⏳ Offer ends 30 Nov at midnight</div>
+    </div>
+
+    <div class="fcard" id="claim">
+      <div class="ribbon">SALE IS LIVE</div>
+      <div class="ctimer"><span>⏳ Sale ends in</span><span class="cd" data-cd></span></div>
+      <h3>Avail the offer</h3>
+      <p class="s">14 hours for <b style="color:var(--purple)">AED 2,400</b> <s style="color:#999">AED 3,360</s>. Leave your details and our team will WhatsApp you to lock it in.</p>
+      <form onsubmit="return claim(this)">
+        <label>Full name<input type="text" required placeholder="Your name"></label>
+        <label>WhatsApp number<input type="tel" required placeholder="05X XXX XXXX"></label>
+        <div class="row2">
+          <label>Email<input type="email" required placeholder="you@email.com"></label>
+          <label>Therapist preference<select required><option value="" disabled selected>Select</option><option>Male</option><option>Female</option><option>No preference</option></select></label>
+        </div>
+        <button class="btn btn-gold" type="submit">Claim my 14 hours →</button>
+      </form>
+      <a class="wa-alt" data-wa="the Black Friday package: 14 hours of massage for AED 2,400" href="#" target="_blank" rel="noopener">Prefer WhatsApp? Message us directly</a>
+      <div class="fine">🔒 We'll only use your details to contact you about this offer.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE OFFER ============ -->
+<section class="center">
+  <div class="wrap">
+    <div class="eyebrow">The mega offer</div>
+    <h2>Pay for 10. Relax for 14.</h2>
+    <p class="sub">Use your hours whenever you need a reset, across our signature relaxation massages.</p>
+    <div class="hours" aria-label="14 hours: 10 paid, 4 free">
+      <div class="hr pay">1</div><div class="hr pay">2</div><div class="hr pay">3</div><div class="hr pay">4</div><div class="hr pay">5</div>
+      <div class="hr pay">6</div><div class="hr pay">7</div><div class="hr pay">8</div><div class="hr pay">9</div><div class="hr pay">10</div>
+      <div class="hr free">11</div><div class="hr free">12</div><div class="hr free">13</div><div class="hr free">14</div>
+    </div>
+    <div class="legend"><span><i style="background:var(--purple-l)"></i>10 hours you pay for</span><span><i style="background:var(--gold)"></i>4 hours free</span></div>
+    <div class="uses"><span>Balinese</span><span>Aromatherapy</span><span>Lomi Lomi</span></div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2>Three simple steps</h2>
+    <div class="how perks">
+      <div class="perk"><div class="n">1</div><h3>Claim before 30 Nov</h3><p>Fill in the form or message us on WhatsApp to lock in your package.</p></div>
+      <div class="perk"><div class="n">2</div><h3>Get your 14 hours</h3><p>Pay AED 2,400 for 10 hours, and we add 4 more on us.</p></div>
+      <div class="perk"><div class="n">3</div><h3>Book your sessions</h3><p>Redeem your hours however you like, with a minimum of 60 minutes per session.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="center">
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details open><summary>What exactly do I get?</summary><p>14 hours of massage for AED 2,400. You pay for 10 hours and get the next 4 hours free, to use on Balinese, Aromatherapy or Lomi Lomi massage.</p></details>
+      <details><summary>When does the offer end?</summary><p>The offer is available from 27 to 30 November only, from Black Friday to Cyber Monday. It ends at midnight on 30 November.</p></details>
+      <details><summary>Do I have to use all 14 hours at once?</summary><p>No. You can redeem your hours however you like. The minimum session is 60 minutes.</p></details>
+      <details><summary>Can I share my hours with a friend?</summary><p>No. The package is for your personal use only.</p></details>
+      <details><summary>Will this offer come back?</summary><p>This is our once-a-year sale. After 30 November, prices go back to normal.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap final-grid">
+    <div>
+      <div class="eyebrow">Once a year · 27–30 Nov</div>
+      <h2>Pay for 10 hours.<br>Get 4 more free.</h2>
+      <p>Don't wait for next year. Claim your package before Cyber Monday ends.</p>
+    </div>
+    <div class="fcard">
+      <div class="ctimer"><span>⏳ Sale ends in</span><span class="cd" data-cd></span></div>
+      <div class="price" style="margin:2px 0 14px"><s class="was">AED 3,360</s><div class="now"><span>AED</span>2,400</div><div class="save">14 HOURS · SAVE 28%</div></div>
+      <a class="btn btn-gold" style="width:100%" href="#claim">Avail the offer →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Cool Aroma Gentlemen's Spa · Shop 14, Al Nasr Plaza, Oud Metha, Dubai · Open daily 10am – midnight · Trade License No. 690390 · <a href="#">Refund &amp; Cancellation Policy</a>
+</footer>
+
+<div class="sticky">
+  <div class="sp"><b>14 hrs · <s style="color:#999;font-weight:600;font-size:12px">3,360</s> AED 2,400</b>Ends in <span data-cd-short></span></div>
+  <a class="btn btn-gold" href="#claim">Avail the offer</a>
+</div>
+
+<script>
+const END = new Date('2026-11-30T23:59:59+04:00').getTime();
+const WA = '971561162545';
+document.querySelectorAll('[data-wa]').forEach(a =>
+  a.href = `https://wa.me/${WA}?text=${encodeURIComponent(`Hi Cool Aroma, I'd like to buy ${a.dataset.wa}.`)}`);
+const pad = n => String(n).padStart(2,'0');
+function tick(){
+  const d = Math.max(0, END - Date.now()), dd = Math.floor(d/864e5), h = Math.floor(d%864e5/36e5),
+        m = Math.floor(d%36e5/6e4), s = Math.floor(d%6e4/1e3);
+  document.querySelectorAll('[data-cd]').forEach(el => el.innerHTML =
+    `<span>${dd}</span><i>d</i><span>${pad(h)}</span><i>h</i><span>${pad(m)}</span><i>m</i><span>${pad(s)}</span><i>s</i>`);
+  document.querySelectorAll('[data-cd-short]').forEach(el => el.textContent = `${dd}d ${pad(h)}:${pad(m)}:${pad(s)}`);
+}
+tick(); setInterval(tick, 1000);
+/* On submit go to the thank-you page (no personal data in the URL).
+   In GHL: Form > On submit > Redirect to URL: thank-you page ?for=waitlist&live=1 */
+function claim(f){ location.href = '/thank-you?for=waitlist&live=1'; return false; }
+</script>
+</body>
+</html>
